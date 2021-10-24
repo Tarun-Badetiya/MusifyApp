@@ -1,0 +1,25 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This classes automatically use play and pause Time */
+
+/*------------ play icon class ------------*/
+.playButtonClass {
+  width: 2.5rem;
+  height: 2rem;
+  background: url("../images/play.png") center center/cover;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+/*------------ pause icon class ------------*/
+.pauseButtonClass {
+  width: 2.5rem;
+  height: 2rem;
+  background: url("../images/pause.png") center center/cover;
+  margin: 0 0.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}

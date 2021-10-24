@@ -1,0 +1,190 @@
+/*------------ Reset Css ------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------ html css ------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*------------ body css ------------*/
+body {
+  background-color: black;
+}
+
+/* -------------------container css ------------------- */
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/* ------------------- navbar css ------------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #60a3bc80;
+  position: relative;
+  overflow: hidden;
+}
+/* ------------------- logo css ------------------- */
+.logo {
+  position: absolute;
+  left: 0;
+  margin: 0 4.5rem;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+/* ------------------- navbar search input css ------------------- */
+.navbar input[type="search"] {
+  width: 40%;
+  height: 2.2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  /* color: #3c6382; */
+  transition: all 0.7s;
+}
+/* ------------------- navbar search input focus css ------------------- */
+.navbar input[type="search"]:focus {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+/* ------------------- navBtn css ------------------- */
+.navBtn {
+  position: absolute;
+  right: 0;
+  margin: 0 4.5rem;
+  overflow: hidden;
+}
+/* ------------------- navBtn button input css ------------------- */
+.navBtn input[type="button"] {
+  display: inline-block;
+  height: 2rem;
+  padding: 0 1.2rem;
+  margin: 0 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/* ------------------- navBtn button input hover css ------------------- */
+.navBtn input[type="button"]:hover {
+  opacity: 0.96;
+}
+/* ------------------- music-container css------------------- */
+.music-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 85vh;
+  background-color: blue;
+  margin: auto;
+  margin-top: 1.2rem;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2px 2px 10px rgb(24, 24, 24);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)),
+    url("../images/Background_Image.jpg") center center/cover;
+  overflow: hidden;
+  position: relative;
+}
+/* ------------------- progressbar container css------------------- */
+.progressbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+/* ------------------- progressbar container input range css------------------- */
+.progressbar-container input[type="range"] {
+  width: 80%;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+/* ------------------- progressbar controls css------------------- */
+.progressbar-controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ------------------- progressbar controls img css------------------- */
+.three-controls {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+  margin: 0 0.8rem;
+}
+.left-right-controls {
+  background-color: rgb(153, 112, 180);
+  border: none;
+  outline: none;
+  border-radius: 0.9rem;
+}
+/* ------------------- progressbar controls music gif css------------------- */
+#music-gif {
+  width: 3rem;
+  position: absolute;
+  left: 8.7rem;
+  opacity: 0;
+  color: white;
+  transition: all 0.6s ease-in;
+}
+#gif-text {
+  color: white;
+  position: absolute;
+  left: 13rem;
+  opacity: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.6s ease-in;
+}
+/* ------------------- music-container range input css------------------- */
+
+.right-music-list-container {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  height: 20rem;
+  position: absolute;
+  right: 0;
+  margin: 1rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  background-color: #34495e;
+}
+/* ------------------- right music list container h2 css ------------------- */
+.right-music-list-container h2 {
+  color: white;
+  margin: 1rem;
+  text-decoration: underline;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musify - Feel the vibe</title>
+
+  <!-------------- include css file -------------->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utility.css" />
+  <!------------------------ include fonts -------------------------->
+  <!-- font-1 Ubuntu start-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+  <!-- font-1 Ubuntu end-->
+
+  <!-- font-2 PT sans narrow start-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet" />
+  <!-- font-2 PT sans narrow end-->
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <!----------------------- navbar start ---------------------->
+      <div class="navbar">
+        <h2 class="logo">Musify</h2>
+        <input type="search" name="searchSong" id="user-Searchsong" placeholder="search your songs"
+          spellcheck="false" />
+        <div class="navBtn">
+          <input type="button" value="SignUp" />
+          <input type="button" value="Login" />
+        </div>
+      </div>
+      <!----------------------- navbar end ---------------------->
+
+      <!----------------------- music container start ---------------------->
+      <div class="music-container">
+        <div class="right-music-list-container">
+          <h2>Songs List:</h2>
+        </div>
+        <!-- i insert background image -->
+
+        <div class="progressbar-container">
+          <!-- add progress bar -->
+          <input type="range" name="progressbar" id="user-progressbar" min="0" max="100" />
+          <!----------------------- progressbar-controls start ---------------------->
+          <div class="progressbar-controls">
+            <!-- music gif  -->
+            <img src="images/music.gif" alt="gif" id="music-gif" /><span id="gif-text">Belive emiway bantai song</span>
+            <!-- backward button -->
+            <img src="images/left.png" alt="backwardButton" title="backward"
+              class="left-right-controls three-controls" />
+            <!-- play button -->
+            <div class="playButtonClass" id="playButtonId" onclick="press_Play_Button()"></div>
+            <!-- forward button -->
+            <img src="images/right.png" alt="forwardButton" title="forward"
+              class="left-right-controls three-controls" />
+          </div>
+          <!----------------------- progressbar-controls end ---------------------->
+        </div>
+      </div>
+      <!----------------------- music container end ---------------------->
+    </div>
+  </main>
+  <script src="js/logic.js"></script>
+</body>
+
+</html>
